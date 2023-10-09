@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 510
+  Left = 329
   Height = 553
-  Top = 65
+  Top = 111
   Width = 810
   Caption = 'Untitled.pas - Andrew''s PascalStorm 2023'
   ClientHeight = 553
@@ -2702,23 +2702,65 @@ object Form1: TForm1
     Top = 93
   end
   object MainMenu1: TMainMenu
-    Left = 365
-    Top = 400
+    Left = 391
+    Top = 283
     object MenuItem1: TMenuItem
       Caption = 'File'
-      object MenuItem2: TMenuItem
-        Caption = 'Open'
-        OnClick = MenuItem2Click
-      end
-      object MenuItem3: TMenuItem
+      object Save: TMenuItem
         Caption = 'Save'
-        OnClick = MenuItem3Click
+        OnClick = SaveClick
+      end
+      object Open: TMenuItem
+        Caption = 'Open'
+        OnClick = OpenClick
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'New'
+        OnClick = MenuItem4Click
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Auto Save'
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object ExitProgr: TMenuItem
+        Caption = 'Exit'
       end
     end
-    object MenuItem4: TMenuItem
-      Caption = 'Help'
+    object MenuItem6: TMenuItem
+      Caption = 'Edit'
+      object CopyProgr: TMenuItem
+        Caption = 'Copy'
+        OnClick = CopyProgrClick
+      end
+      object PasteProgr: TMenuItem
+        Caption = 'Paste'
+        OnClick = PasteProgrClick
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object SelectAllProgr: TMenuItem
+        Caption = 'Select All'
+        OnClick = SelectAllProgrClick
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Search'
       object MenuItem5: TMenuItem
+        Caption = 'Find'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem10: TMenuItem
+      Caption = 'Help'
+      object About: TMenuItem
         Caption = 'About'
+        OnClick = AboutClick
       end
     end
   end
